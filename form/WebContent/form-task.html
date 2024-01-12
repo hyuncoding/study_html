@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 가입</title>
+</head>
+<body>
+	<!-- header -->
+	<div>
+		<!-- topbar -->
+		<div>
+			<!-- container -->
+			<div>
+				<ul style="list-style: none;">
+					<li style="float: right">로그인</li>
+					<li style="float: right">회원가입</li>
+				</ul>
+			</div>
+		</div>
+		<!-- navvar -->
+		<div>
+			<a>
+				<!-- LOGO -->
+				<img src="images/LOGO.png" style="width: 300px;">
+			</a>
+			<ul style="list-style: none; display: flex; flex-direction: row; justify-content: right;">
+					<li>문제</li>
+					<li>문제집</li>
+					<li>대회</li>
+					<li>채점 현황</li>
+					<li>랭킹</li>
+					<li>게시판</li>
+					<li>그룹</li>
+					<li>더 보기</li>
+					<li><img src="images/search.png" style="width: 20px;"></li>
+			</ul>
+		</div>
+		<div>
+			회원가입
+		</div>
+		<form name="joinForm" style="text-align: center;">
+			<div>
+				<h3>회원가입</h3>
+				<p>
+				계정이 이미 있는 경우에는 <a href=https://www.acmicpc.net/login">로그인</a>해주세요.<br>
+				가입을 하면 백준 온라인 저지의 <a href="https://www.acmicpc.net/terms">이용약관</a>, <a href="https://www.acmicpc.net/privacy">개인정보취급방침 및 개인정보3자제공</a>에 동의하게 됩니다.<br>
+				아이디가 구글 검색에 노출되는 것을 원치않는 분은 다른 곳에서 사용하지 않는 아이디를 사용해주세요.<br>
+				아이디의 구글 검색 노출은 회원가입 후 정보 수정에서 변경할 수 있습니다.<br>
+				가입 후 아이디는 변경할 수 없습니다.
+				</p>
+			</div>
+			<div>
+				<p>
+					<label>
+						아이디<br>
+						<input type="text" name="userID">
+					</label>
+				</p>
+				<p>
+					<label>
+						상태 메시지 (다른 사람에게 보이고 싶은 한마디)<br>
+						<input type="text" name="userProfileMessage">
+					</label>
+				</p>
+				<p>
+					<label>
+						비밀번호<br>
+						<input type="password" name="userPassword">
+					</label>
+				</p>
+				<p>
+					<label>
+						비밀번호 (확인)<br>
+						<input type="password" name="userPasswordRepeat">
+					</label>
+				</p>
+				<p>
+					<label>
+						학교/회사 또는 소속<br>
+						<input type="text" name="userCompany">
+					</label>
+				</p>
+				<p>
+					<label>
+						이메일<br>
+						<input type="text" name="userEmail">
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="isRobot">로봇이 아닙니다.
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="isAgreedToMarketing">대회 안내/강의 안내/채용 안내/기타 안내 및 광고 이메일 받기
+					</label>
+				</p>
+			</div>
+			<div>
+				<button>회원가입</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
