@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FORM</title>
+    </head>
+    <body>
+        <!--
+        form
+        입력폼(input, select)을 웹 페이지에서부터
+        처리하는 로직(백엔드)에 데이터를 전송할 때 사용
+
+        action
+            해당 form이 제출(submit)되었을 때 제출되는 데이터가
+            향하는 위치, 백엔드 서버 주소(https://blahblahblah.com)
+
+        method
+            데이터를 보내는 형태
+            get
+                -url에 데이터를 실어서 요청을 보내는 것 (조회)
+            post
+                -요청 메시지 안의 본문에 데이터를 실어서 요청 (저장)
+
+        * onSubmit (자바스크립트를 알아야 제대로 사용 가능)
+
+        ============================================================
+
+        form 태그를 사용하는 이유
+            enter 쳤을 때 submit이 됨(버튼이 클릭)
+            사용자가 입력한 값을 자바스크립트로 따로 가져오지 않아도
+            submit 이벤트로 받아올 수 있음
+
+            ==> 백엔드와의 데이터 통신 간에 편의성 증대
+            ==> 유효성 검사
+
+        ============================================================
+    -->
+        <form method="get" action="#">
+            <button type="button">중복검사</button>
+            <input type="email" name="user-id" />
+            <input type="password" name="user-pw" />
+            <button>로그인</button>
+            <!--
+            form의 제출을 위해선 button의 타입이 submit이어야 함
+            그러나, button 태그의 기본 타입은 submit
+        --></form>
+    </body>
+</html>
